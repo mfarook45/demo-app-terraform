@@ -5,11 +5,10 @@ metadata:
   name: demo-app
 
 spec:
+  type: LoadBalancer        # ✅ Moved here, under spec
   selector:
-    app: demo-app
+    app: demo-app           # ✅ Only app label here, no type
 
   ports:
   - port: 80
     targetPort: 5000
-
-  type: NodePort
