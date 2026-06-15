@@ -2,7 +2,7 @@ name: CI-CD Pipeline
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "gke-demo" ]
 
 env:
   PROJECT_ID: serene-bliss-499420-p4
