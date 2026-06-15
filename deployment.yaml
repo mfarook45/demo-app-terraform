@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: europe-north1-docker.pkg.dev/serene-bliss-499420-p4/my-app-repo/my-app:v1
+        image: europe-north1-docker.pkg.dev/serene-bliss-499420-p4/my-app-repo/demo-app:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 5000

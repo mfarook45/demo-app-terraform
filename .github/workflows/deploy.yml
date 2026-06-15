@@ -71,5 +71,5 @@ jobs:
     - name: Deploy to GKE
       run: |
         kubectl set image deployment/demo-app \
-          demo-app=${{ env.IMAGE }}:${{ github.sha }}
+          app=${{ env.IMAGE }}:${{ github.sha }}
         kubectl rollout status deployment/demo-app
